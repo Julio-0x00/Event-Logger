@@ -27,7 +27,7 @@ char* get_timestamp() {
 
 void CTRL_C(int sig) {
   printf("\033[2J\033[H" COLOR_RED "Saliendo..." COLOR_RESET "\n");
-  fprintf(log_events, COLOR_GREEN "[%s] " COLOR_RESET COLOR_RED "El programa se ha detenido" COLOR_RESET, get_timestamp());
+  fprintf(log_events, COLOR_GREEN "[%s] " COLOR_RESET COLOR_RED "El programa se ha detenido" COLOR_RESET "\n", get_timestamp());
   fflush(log_events);
   fclose(log_events);
   exit(0);
