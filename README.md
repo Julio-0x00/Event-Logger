@@ -37,7 +37,7 @@ Todos los eventos se registran en un archivo de log con timestamp.
 ## Compilación
 
 ```bash
-gcc monitor.c -o monitor
+gcc event-logger.c -o event-logger.c
 ```
 
 ---
@@ -45,7 +45,7 @@ gcc monitor.c -o monitor
 ## Uso
 
 ```bash
-./monitor
+./event-logger
 ```
 
 El programa te pedirá:
@@ -65,10 +65,13 @@ Introduce el directorio donde van a ir los logs: /home/user/logs
 ## Ejemplo de log
 
 ```
-[2026-04-14 12:00:00] El programa se ha iniciado
-[2026-04-14 12:01:10] Se ha creado un archivo: ejemplo.txt
-[2026-04-14 12:02:05] Se ha modificado el archivo: ejemplo.txt
-[2026-04-14 12:03:00] Se ha eliminado el archivo: ejemplo.txt
+[2026-04-14 20:04:47] El programa se ha iniciado
+[2026-04-14 20:04:52] Se ha creado un directorio: test
+[2026-04-14 20:04:58] Se ha creado un archivo: test.txt
+[2026-04-14 20:05:07] Se ha eliminado el directorio: test
+[2026-04-14 20:05:18] Se ha modificado el archivo: test.txt
+[2026-04-14 20:05:18] Se ha modificado el archivo: test.txt
+[2026-04-14 20:05:25] Se ha eliminado el archivo: test.txt
 ```
 
 ---
